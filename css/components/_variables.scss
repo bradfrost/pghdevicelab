@@ -1,0 +1,128 @@
+/*** Colors ***/
+$primary-color: color("blue", "lighten-1") !global;
+$primary-color-light: false !global;
+$primary-color-dark: false !global;
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+
+$secondary-color: color("teal", "lighten-1") !global;
+$success-color: color("green", "base") !global;
+$error-color: color("red", "base") !global;
+
+$link-color: color("light-blue", "darken-1") !global;
+
+
+/*** Badges ***/
+$badge-bg-color: $secondary-color;
+
+/*** Buttons ***/
+$button-bg-color-disabled: #DFDFDF !global;
+$button-color: color("blue", "lighten-2");
+$button-color-disabled: #9F9F9F !global;
+$button-color-flat: #343434 !global;
+$button-color-raised: #FFF !global;
+$button-floating-size: 37px !global;
+$button-height: 36px !global;
+$button-font-size-shared: 1.3rem !global;
+$button-line-height: 36px !global;
+
+
+/*** Cards ***/
+$card-padding: 20px !global;
+$card-bg-color: #fff !global;
+
+/*** Collapsible ***/
+$collapsible-height: 3rem !global;
+$collapsible-header-color: #fff !global;
+$collapsible-border-color: #ddd !global;
+
+
+/*** Dropdown ***/
+$dropdown-color: $secondary-color;
+
+
+/*** Forms ***/
+// Text Inputs + Textarea
+$input-border-color: color("grey", "base") !global;
+$input-error-color: $error-color !global;
+$input-success-color: $success-color !global;
+$input-focus-color: $secondary-color !global;
+$label-font-size: .8rem !global;
+$input-disabled-color: rgba(0,0,0, .26) !global;
+
+
+// Radio Buttons
+$radio-fill-color: $secondary-color !global;
+$radio-empty-color: #5a5a5a !global;
+
+/*** Global ***/
+// Media Query Ranges
+$small-screen-up: 601px !global;
+$medium-screen-up: 993px !global;
+$large-screen-up: 1201px !global;
+$small-screen: 600px !global;
+$medium-screen: 992px !global;
+$large-screen: 1200px !global;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !global;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !global;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !global;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !global;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !global;
+
+// Grid Variables
+$num-cols: 12 !global;
+$gutter-width: 1.5rem !global;
+$element-top-margin: $gutter-width/3 !global;
+$element-bottom-margin: ($gutter-width*2)/3 !global;
+
+/*** Navbar ***/
+$navbar-height: 64px !global;
+$navbar-height-mobile: 56px !global;
+
+
+/*** SideNav ***/
+
+
+
+/*** Tabs ***/
+$tabs-underline-color: $primary-color-light;
+$tabs-text-color: $primary-color;
+
+/*** Tables ***/
+$table-border-color: #d0d0d0;
+$table-striped-color: #f2f2f2;
+
+/*** Toasts ***/
+$toast-height: 48px !global;
+$toast-color: #323232 !global;
+$toast-text-color: #fff !global;
+
+/*** Typography ***/
+$off-black: rgba(0, 0, 0, 0.87) !global;
+// Header Styles
+$h1-fontsize: 4.2rem !global;
+$h2-fontsize: 3.1rem !global;
+$h3-fontsize: 2.92rem !global;
+$h4-fontsize: 2.28rem !global;
+$h5-fontsize: 1.64rem !global;
+$h6-fontsize: 1rem !global;
+
+// Flowtext
+$range : $large-screen - $small-screen !global;
+$intervals: 20 !global;
+$interval-size: $range / $intervals !global;
+
+/*** Collections ***/
+$collection-border-color: #e0e0e0 !global;
+$collection-bg-color: #fff !global;
+$collection-active-bg-color: $secondary-color !global;
+$collection-active-color: lighten($secondary-color, 55%) !global;
+$collection-hover-bg-color: rgba(0,0,0,.08) !global;
+
+/* Progress Bar */
+$progress-bar-color: $secondary-color;

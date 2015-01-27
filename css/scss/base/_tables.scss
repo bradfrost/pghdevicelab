@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    $Table
+\*------------------------------------*/
+table {
+	border-collapse: collapse; 
+	border-spacing: 0; 
+	width: 100%;
+}
+th {
+	text-align: left;
+	border: 1px solid $gray;
+	padding: 0.5em;
+}
+
+tr {
+	&:nth-child(odd) {
+		background: rgba(0,0,0,0.15);
+	}
+}
+
+td {
+	padding: 0.5em;
+}

@@ -1,0 +1,26 @@
+.section {
+	padding: 2em;
+}
+
+.section-content {
+	@extend .lc;
+}
+
+.section-intro {
+	text-align: center;
+}
+
+.section-about {
+	background: rgba(0,0,0,0.15);
+}
+
+.section-devices {
+	background: url(images/pittsburgh-open-device-lab-catapult-yellow.jpg) no-repeat $gold;
+	background: $gold;
+	background-size: cover;
+	color: #222;
+	
+	h2 {
+		color: #222;
+	}
+}

@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.footer {
+	background: rgba(0,0,0,0.5);
+	color: $white;
+	padding: $pad-double $pad;
+	text-align: center;
+	
+	p {
+		margin: 0;
+	}
+	
+	a {
+		color: $white;
+		transition: all 0.2s ease-out;
+	}
+}

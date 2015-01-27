@@ -1,0 +1,20 @@
+.header {
+  @extend .z-depth-1;
+  color: color("blue", "lighten-5");
+  background-color: $primary-color;
+  padding: 2em;
+  text-align: center;
+  
+  a {
+	  color: color("blue", "lighten-5");
+  }
+  
+  p {
+	  margin-bottom: 1.5em;
+  }
+}
+
+.tagline {
+	margin: 0 auto;
+	max-width: 36em;
+}

@@ -1,0 +1,16 @@
+.header {
+	overflow: hidden;
+	text-align: center;
+	padding: 4em 2em;
+	//background: url(images/bg_header.jpg) no-repeat;
+	background-size: cover;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1em;
+	
+	a {
+		display: block;
+	}
+}
